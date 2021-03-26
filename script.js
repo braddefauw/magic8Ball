@@ -6,14 +6,15 @@ $(document).ready(function(){
     magic8Ball.output = function (question) {
         var index = Math.floor(Math.random()*this.answers.length);
         var answer = this.answers[index];
+        $("#answer").fadeIn(4000);
         $("#answer").text(answer);
     };
         
     var onClick = function () {
-        $("#questionButton").click(onClick);
+        $("#answer").hide();
         var question = prompt("ASK A YES/NO QUESTION!");
         magic8Ball.output(question);
     };
         
-    $("#questionButton").click(onClick);
+        $("#questionButton").click(onClick);
     });
