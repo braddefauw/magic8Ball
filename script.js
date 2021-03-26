@@ -16,6 +16,7 @@ $(document).ready(function(){
         $("#8ball").attr("src", "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/8side.png");
         setTimeout(function(){
             var question = prompt("ASK A YES/NO QUESTION!");
+			$("#8ball").effect("shake");
             magic8Ball.output(question);
         }, 500);
     };
