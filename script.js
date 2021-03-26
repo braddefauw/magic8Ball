@@ -21,5 +21,5 @@ $(document).ready(function(){
         }, 500);
     };
         
-        $("#questionButton").click(onClick);
+    $("#questionButton").click(onClick);
     });
